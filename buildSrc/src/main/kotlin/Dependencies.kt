@@ -26,6 +26,8 @@ object Versions {
     const val koin = "3.0.1-beta-2"
     const val slf4j = "1.7.30"
     const val russhwolf = "0.7.4"
+
+    const val kluent = "1.65"
 }
 
 object Deps {
@@ -68,6 +70,9 @@ object Ktor {
     val clientApache = "io.ktor:ktor-client-apache:${Versions.ktor}"
     val slf4j = "org.slf4j:slf4j-simple:${Versions.slf4j}"
     val clientIos = "io.ktor:ktor-client-ios:${Versions.ktor}"
+
+    val clientMock = "io.ktor:ktor-client-mock:${Versions.ktor}"
+
 }
 
 object Serialization {

@@ -13,7 +13,7 @@ class MvvmContetViewModel : ObservableObject {
     // Getter
     var name : String {
         john.name
-    }
+    } 
     var age : String {
         String(john.age)
     }
@@ -27,7 +27,6 @@ class MvvmContetViewModel : ObservableObject {
         john.name = name
     }
 }
-
 
 // Views
 struct MvvmContentView : View {
