@@ -22,6 +22,8 @@
 		E37B2BAD261FA1200089AB70 /* FooListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BAC261FA1200089AB70 /* FooListView.swift */; };
 		E37B2BB3261FA1FB0089AB70 /* FooContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB2261FA1FB0089AB70 /* FooContentView.swift */; };
 		E37B2BB5261FA2270089AB70 /* FooViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB4261FA2270089AB70 /* FooViewModel.swift */; };
+		E37E0888262026C4008FECCC /* MVVMSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0887262026C4008FECCC /* MVVMSample.swift */; };
+		E37E088A262033D3008FECCC /* SwiftUIMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -55,6 +57,8 @@
 		E37B2BAC261FA1200089AB70 /* FooListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooListView.swift; sourceTree = "<group>"; };
 		E37B2BB2261FA1FB0089AB70 /* FooContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooContentView.swift; sourceTree = "<group>"; };
 		E37B2BB4261FA2270089AB70 /* FooViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooViewModel.swift; sourceTree = "<group>"; };
+		E37E0887262026C4008FECCC /* MVVMSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSample.swift; sourceTree = "<group>"; };
+		E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 		E30E255F261EC53600C0C7E0 /* c9s */ = {
 			isa = PBXGroup;
 			children = (
+				E37E088626202674008FECCC /* MVVM */,
 				E37B2BAB261FA1080089AB70 /* foo */,
 				E30E2573261ECEA300C0C7E0 /* samples */,
 				E30E2560261EC53600C0C7E0 /* c9sApp.swift */,
@@ -145,6 +150,15 @@
 				E37B2BB4261FA2270089AB70 /* FooViewModel.swift */,
 			);
 			path = foo;
+			sourceTree = "<group>";
+		};
+		E37E088626202674008FECCC /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				E37E0887262026C4008FECCC /* MVVMSample.swift */,
+				E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */,
+			);
+			path = MVVM;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,11 +258,13 @@
 				E37B2BB5261FA2270089AB70 /* FooViewModel.swift in Sources */,
 				E30E2563261EC53600C0C7E0 /* ContentView.swift in Sources */,
 				E30E257E261ED08A00C0C7E0 /* ListView.swift in Sources */,
+				E37E088A262033D3008FECCC /* SwiftUIMVVM.swift in Sources */,
 				E30E2576261ECF5F00C0C7E0 /* MapView.swift in Sources */,
 				E30E2587261ED9D900C0C7E0 /* ContactWithDetailView.swift in Sources */,
 				E30E2561261EC53600C0C7E0 /* c9sApp.swift in Sources */,
 				E37B2BAD261FA1200089AB70 /* FooListView.swift in Sources */,
 				E30BFF79261EE7A60035124E /* Contact.swift in Sources */,
+				E37E0888262026C4008FECCC /* MVVMSample.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
