@@ -8,16 +8,16 @@ import SwiftUI
 import Combine
 import shared
 
-struct FooListView: View {
+struct CListView: View {
     
-    @ObservedObject var viewModel: FooViewModel
+    @ObservedObject var viewModel: CViewModel
     
     var body: some View {
         
         NavigationView {
             List(viewModel.countyList, id: \.name) { country in
-                NavigationLink(destination: FooView(country: country)) {
-                    FooView(country: country)
+                NavigationLink(destination: CView(country: country)) {
+                    CView(country: country)
                 }
             }
             .navigationBarTitle(Text("List"))
@@ -29,7 +29,7 @@ struct FooListView: View {
 }
 
 
-struct FooView: View {
+struct CView: View {
     var country: Country
     
     var body: some View {

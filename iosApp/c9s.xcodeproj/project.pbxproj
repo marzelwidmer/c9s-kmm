@@ -10,7 +10,6 @@
 		E30BFF79261EE7A60035124E /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BFF78261EE7A60035124E /* Contact.swift */; };
 		E30BFF7C261EEAB50035124E /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30BFF7B261EEAB50035124E /* DetailView.swift */; };
 		E30E2561261EC53600C0C7E0 /* c9sApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E2560261EC53600C0C7E0 /* c9sApp.swift */; };
-		E30E2563261EC53600C0C7E0 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E2562261EC53600C0C7E0 /* ContentView.swift */; };
 		E30E2565261EC53600C0C7E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30E2564261EC53600C0C7E0 /* Assets.xcassets */; };
 		E30E2568261EC53600C0C7E0 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E30E2567261EC53600C0C7E0 /* Preview Assets.xcassets */; };
 		E30E2571261ECE9100C0C7E0 /* ComposeCustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E2570261ECE9100C0C7E0 /* ComposeCustomView.swift */; };
@@ -19,9 +18,9 @@
 		E30E2587261ED9D900C0C7E0 /* ContactWithDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E2586261ED9D900C0C7E0 /* ContactWithDetailView.swift */; };
 		E37B2BA7261FA0420089AB70 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37B2BA6261FA0420089AB70 /* shared.framework */; };
 		E37B2BA8261FA0420089AB70 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E37B2BA6261FA0420089AB70 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		E37B2BAD261FA1200089AB70 /* FooListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BAC261FA1200089AB70 /* FooListView.swift */; };
-		E37B2BB3261FA1FB0089AB70 /* FooContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB2261FA1FB0089AB70 /* FooContentView.swift */; };
-		E37B2BB5261FA2270089AB70 /* FooViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB4261FA2270089AB70 /* FooViewModel.swift */; };
+		E37B2BAD261FA1200089AB70 /* CListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BAC261FA1200089AB70 /* CListView.swift */; };
+		E37B2BB3261FA1FB0089AB70 /* CContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB2261FA1FB0089AB70 /* CContentView.swift */; };
+		E37B2BB5261FA2270089AB70 /* CViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB4261FA2270089AB70 /* CViewModel.swift */; };
 		E37E0888262026C4008FECCC /* MVVMSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0887262026C4008FECCC /* MVVMSample.swift */; };
 		E37E088A262033D3008FECCC /* SwiftUIMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +44,6 @@
 		E30BFF7B261EEAB50035124E /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		E30E255D261EC53600C0C7E0 /* c9s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = c9s.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E30E2560261EC53600C0C7E0 /* c9sApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c9sApp.swift; sourceTree = "<group>"; };
-		E30E2562261EC53600C0C7E0 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E30E2564261EC53600C0C7E0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E30E2567261EC53600C0C7E0 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E30E2569261EC53600C0C7E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -54,9 +52,9 @@
 		E30E257D261ED08A00C0C7E0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		E30E2586261ED9D900C0C7E0 /* ContactWithDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWithDetailView.swift; sourceTree = "<group>"; };
 		E37B2BA6261FA0420089AB70 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
-		E37B2BAC261FA1200089AB70 /* FooListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooListView.swift; sourceTree = "<group>"; };
-		E37B2BB2261FA1FB0089AB70 /* FooContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooContentView.swift; sourceTree = "<group>"; };
-		E37B2BB4261FA2270089AB70 /* FooViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FooViewModel.swift; sourceTree = "<group>"; };
+		E37B2BAC261FA1200089AB70 /* CListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CListView.swift; sourceTree = "<group>"; };
+		E37B2BB2261FA1FB0089AB70 /* CContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CContentView.swift; sourceTree = "<group>"; };
+		E37B2BB4261FA2270089AB70 /* CViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModel.swift; sourceTree = "<group>"; };
 		E37E0887262026C4008FECCC /* MVVMSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSample.swift; sourceTree = "<group>"; };
 		E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -93,11 +91,8 @@
 		E30E255F261EC53600C0C7E0 /* c9s */ = {
 			isa = PBXGroup;
 			children = (
-				E37E088626202674008FECCC /* MVVM */,
-				E37B2BAB261FA1080089AB70 /* foo */,
-				E30E2573261ECEA300C0C7E0 /* samples */,
+				E3568CA326217A8B0030D0DC /* etc */,
 				E30E2560261EC53600C0C7E0 /* c9sApp.swift */,
-				E30E2562261EC53600C0C7E0 /* ContentView.swift */,
 				E30E2564261EC53600C0C7E0 /* Assets.xcassets */,
 				E30E2569261EC53600C0C7E0 /* Info.plist */,
 				E30E2566261EC53600C0C7E0 /* Preview Content */,
@@ -113,7 +108,7 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		E30E2573261ECEA300C0C7E0 /* samples */ = {
+		E30E2573261ECEA300C0C7E0 /* samplesSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
 				E30E2580261ED97A00C0C7E0 /* contacts */,
@@ -121,7 +116,7 @@
 				E30E2575261ECF5F00C0C7E0 /* MapView.swift */,
 				E30E257D261ED08A00C0C7E0 /* ListView.swift */,
 			);
-			path = samples;
+			path = samplesSwiftUI;
 			sourceTree = "<group>";
 		};
 		E30E2580261ED97A00C0C7E0 /* contacts */ = {
@@ -134,6 +129,32 @@
 			path = contacts;
 			sourceTree = "<group>";
 		};
+		E3568CA1262179960030D0DC /* pattern */ = {
+			isa = PBXGroup;
+			children = (
+				E37E088626202674008FECCC /* MVVM */,
+			);
+			path = pattern;
+			sourceTree = "<group>";
+		};
+		E3568CA2262179B20030D0DC /* sampleKMM */ = {
+			isa = PBXGroup;
+			children = (
+				E37B2BAB261FA1080089AB70 /* covid */,
+			);
+			path = sampleKMM;
+			sourceTree = "<group>";
+		};
+		E3568CA326217A8B0030D0DC /* etc */ = {
+			isa = PBXGroup;
+			children = (
+				E3568CA2262179B20030D0DC /* sampleKMM */,
+				E3568CA1262179960030D0DC /* pattern */,
+				E30E2573261ECEA300C0C7E0 /* samplesSwiftUI */,
+			);
+			path = etc;
+			sourceTree = "<group>";
+		};
 		E37B2BA4261FA0050089AB70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -142,14 +163,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		E37B2BAB261FA1080089AB70 /* foo */ = {
+		E37B2BAB261FA1080089AB70 /* covid */ = {
 			isa = PBXGroup;
 			children = (
-				E37B2BB2261FA1FB0089AB70 /* FooContentView.swift */,
-				E37B2BAC261FA1200089AB70 /* FooListView.swift */,
-				E37B2BB4261FA2270089AB70 /* FooViewModel.swift */,
+				E37B2BB2261FA1FB0089AB70 /* CContentView.swift */,
+				E37B2BAC261FA1200089AB70 /* CListView.swift */,
+				E37B2BB4261FA2270089AB70 /* CViewModel.swift */,
 			);
-			path = foo;
+			path = covid;
 			sourceTree = "<group>";
 		};
 		E37E088626202674008FECCC /* MVVM */ = {
@@ -252,17 +273,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37B2BB3261FA1FB0089AB70 /* FooContentView.swift in Sources */,
+				E37B2BB3261FA1FB0089AB70 /* CContentView.swift in Sources */,
 				E30E2571261ECE9100C0C7E0 /* ComposeCustomView.swift in Sources */,
 				E30BFF7C261EEAB50035124E /* DetailView.swift in Sources */,
-				E37B2BB5261FA2270089AB70 /* FooViewModel.swift in Sources */,
-				E30E2563261EC53600C0C7E0 /* ContentView.swift in Sources */,
+				E37B2BB5261FA2270089AB70 /* CViewModel.swift in Sources */,
 				E30E257E261ED08A00C0C7E0 /* ListView.swift in Sources */,
 				E37E088A262033D3008FECCC /* SwiftUIMVVM.swift in Sources */,
 				E30E2576261ECF5F00C0C7E0 /* MapView.swift in Sources */,
 				E30E2587261ED9D900C0C7E0 /* ContactWithDetailView.swift in Sources */,
 				E30E2561261EC53600C0C7E0 /* c9sApp.swift in Sources */,
-				E37B2BAD261FA1200089AB70 /* FooListView.swift in Sources */,
+				E37B2BAD261FA1200089AB70 /* CListView.swift in Sources */,
 				E30BFF79261EE7A60035124E /* Contact.swift in Sources */,
 				E37E0888262026C4008FECCC /* MVVMSample.swift in Sources */,
 			);

@@ -1,7 +1,7 @@
 import Combine
 import shared
 
-class FooViewModel: ObservableObject {
+class CViewModel: ObservableObject {
     
     @Published var countyList = [Country]()
     
