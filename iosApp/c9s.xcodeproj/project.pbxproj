@@ -16,13 +16,16 @@
 		E30E2576261ECF5F00C0C7E0 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E2575261ECF5F00C0C7E0 /* MapView.swift */; };
 		E30E257E261ED08A00C0C7E0 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E257D261ED08A00C0C7E0 /* ListView.swift */; };
 		E30E2587261ED9D900C0C7E0 /* ContactWithDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E30E2586261ED9D900C0C7E0 /* ContactWithDetailView.swift */; };
+		E3568CA826217BD60030D0DC /* UsersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3568CA726217BD60030D0DC /* UsersView.swift */; };
+		E3568CAA26217BF00030D0DC /* AppDataServcie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3568CA926217BF00030D0DC /* AppDataServcie.swift */; };
+		E3568CAC26217BFC0030D0DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3568CAB26217BFC0030D0DC /* User.swift */; };
 		E37B2BA7261FA0420089AB70 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37B2BA6261FA0420089AB70 /* shared.framework */; };
 		E37B2BA8261FA0420089AB70 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E37B2BA6261FA0420089AB70 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E37B2BAD261FA1200089AB70 /* CListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BAC261FA1200089AB70 /* CListView.swift */; };
 		E37B2BB3261FA1FB0089AB70 /* CContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB2261FA1FB0089AB70 /* CContentView.swift */; };
 		E37B2BB5261FA2270089AB70 /* CViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB4261FA2270089AB70 /* CViewModel.swift */; };
-		E37E0888262026C4008FECCC /* MVVMSample.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0887262026C4008FECCC /* MVVMSample.swift */; };
-		E37E088A262033D3008FECCC /* SwiftUIMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */; };
+		E37E0888262026C4008FECCC /* PersonMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0887262026C4008FECCC /* PersonMVVM.swift */; };
+		E37E088A262033D3008FECCC /* TodoListMVVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37E0889262033D3008FECCC /* TodoListMVVM.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -51,12 +54,15 @@
 		E30E2575261ECF5F00C0C7E0 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
 		E30E257D261ED08A00C0C7E0 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		E30E2586261ED9D900C0C7E0 /* ContactWithDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactWithDetailView.swift; sourceTree = "<group>"; };
+		E3568CA726217BD60030D0DC /* UsersView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersView.swift; sourceTree = "<group>"; };
+		E3568CA926217BF00030D0DC /* AppDataServcie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDataServcie.swift; sourceTree = "<group>"; };
+		E3568CAB26217BFC0030D0DC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E37B2BA6261FA0420089AB70 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
 		E37B2BAC261FA1200089AB70 /* CListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CListView.swift; sourceTree = "<group>"; };
 		E37B2BB2261FA1FB0089AB70 /* CContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CContentView.swift; sourceTree = "<group>"; };
 		E37B2BB4261FA2270089AB70 /* CViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModel.swift; sourceTree = "<group>"; };
-		E37E0887262026C4008FECCC /* MVVMSample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMSample.swift; sourceTree = "<group>"; };
-		E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUIMVVM.swift; sourceTree = "<group>"; };
+		E37E0887262026C4008FECCC /* PersonMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonMVVM.swift; sourceTree = "<group>"; };
+		E37E0889262033D3008FECCC /* TodoListMVVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoListMVVM.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,32 @@
 			path = etc;
 			sourceTree = "<group>";
 		};
+		E3568CA426217B8C0030D0DC /* todolist */ = {
+			isa = PBXGroup;
+			children = (
+				E37E0889262033D3008FECCC /* TodoListMVVM.swift */,
+			);
+			path = todolist;
+			sourceTree = "<group>";
+		};
+		E3568CA526217BA00030D0DC /* persons */ = {
+			isa = PBXGroup;
+			children = (
+				E37E0887262026C4008FECCC /* PersonMVVM.swift */,
+			);
+			path = persons;
+			sourceTree = "<group>";
+		};
+		E3568CA626217BAE0030D0DC /* users */ = {
+			isa = PBXGroup;
+			children = (
+				E3568CA726217BD60030D0DC /* UsersView.swift */,
+				E3568CA926217BF00030D0DC /* AppDataServcie.swift */,
+				E3568CAB26217BFC0030D0DC /* User.swift */,
+			);
+			path = users;
+			sourceTree = "<group>";
+		};
 		E37B2BA4261FA0050089AB70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -176,8 +208,9 @@
 		E37E088626202674008FECCC /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				E37E0887262026C4008FECCC /* MVVMSample.swift */,
-				E37E0889262033D3008FECCC /* SwiftUIMVVM.swift */,
+				E3568CA626217BAE0030D0DC /* users */,
+				E3568CA526217BA00030D0DC /* persons */,
+				E3568CA426217B8C0030D0DC /* todolist */,
 			);
 			path = MVVM;
 			sourceTree = "<group>";
@@ -278,13 +311,16 @@
 				E30BFF7C261EEAB50035124E /* DetailView.swift in Sources */,
 				E37B2BB5261FA2270089AB70 /* CViewModel.swift in Sources */,
 				E30E257E261ED08A00C0C7E0 /* ListView.swift in Sources */,
-				E37E088A262033D3008FECCC /* SwiftUIMVVM.swift in Sources */,
+				E37E088A262033D3008FECCC /* TodoListMVVM.swift in Sources */,
 				E30E2576261ECF5F00C0C7E0 /* MapView.swift in Sources */,
 				E30E2587261ED9D900C0C7E0 /* ContactWithDetailView.swift in Sources */,
+				E3568CAC26217BFC0030D0DC /* User.swift in Sources */,
 				E30E2561261EC53600C0C7E0 /* c9sApp.swift in Sources */,
+				E3568CAA26217BF00030D0DC /* AppDataServcie.swift in Sources */,
+				E3568CA826217BD60030D0DC /* UsersView.swift in Sources */,
 				E37B2BAD261FA1200089AB70 /* CListView.swift in Sources */,
 				E30BFF79261EE7A60035124E /* Contact.swift in Sources */,
-				E37E0888262026C4008FECCC /* MVVMSample.swift in Sources */,
+				E37E0888262026C4008FECCC /* PersonMVVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
