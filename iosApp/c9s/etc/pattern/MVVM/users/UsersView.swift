@@ -9,9 +9,10 @@ import SwiftUI
 
 struct UsersView: View {
     
-    @StateObject  var viewModel = Self.ViewModel()
-//    @StateObject  var viewModel = ViewModel()
-//    @StateObject  var viewModel = UsersView.ViewModel()
+    @StateObject var viewModel : ViewModel
+    init(viewModel: ViewModel = .init()) { 
+        _viewModel = StateObject(wrappedValue: viewModel)
+    }
     
     var body: some View {
         List(viewModel.users) { user in
@@ -30,7 +31,11 @@ extension UsersView {
         @Published var users = [User]()
         
         // Instance of dataservice
-        let dataService = AppDataService()
+        let dataService: DataService
+        
+        init(dataService: DataService = AppDataService()) { // Default is AppDataService
+            self.dataService = dataService
+        }
         
         func getUsers() {
             // Network Request get users from backend
@@ -44,6 +49,10 @@ extension UsersView {
 
 struct UsersView_Previews: PreviewProvider {
     static var previews: some View {
-        UsersView()
+        let user = User(id: 0, name: "Dummy")
+        let viewModel = UsersView.ViewModel()
+        viewModel.users = [user]
+        
+        return UsersView(viewModel: viewModel)
     }
 }

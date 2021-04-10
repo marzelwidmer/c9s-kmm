@@ -7,7 +7,11 @@
 
 import Foundation
 
-class AppDataService {
+protocol DataService {
+    func getUsers(completion: @escaping ([User]) -> Void)
+}
+
+class AppDataService : DataService{
     func getUsers(completion: @escaping ([User]) -> Void) {
         DispatchQueue.main.async {
             completion([
