@@ -9,6 +9,8 @@ plugins {
 kotlin {
     android()
 
+    // Build for iOS phone
+    // SDK_NAME=iphoneos gradle clean packForXcode
     val iosTarget: (String, KotlinNativeTarget.() -> Unit) -> KotlinNativeTarget =
         if (System.getenv("SDK_NAME")?.startsWith("iphoneos") == true)
             ::iosArm64

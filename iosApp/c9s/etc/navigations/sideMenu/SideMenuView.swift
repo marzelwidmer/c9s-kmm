@@ -11,35 +11,37 @@ struct SideMenuView: View {
     @Binding var isShowing: Bool
     
     var body: some View {
-        ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]),startPoint: .top, endPoint: .bottom)
-                .ignoresSafeArea()
-            
-            VStack{
-                SideMenuHeaderView(isShowing: $isShowing)
-                    .foregroundColor(.white)
-                    .frame(height: 240)
+        if isShowing {
+            ZStack {
+                LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]),startPoint: .top, endPoint: .bottom)
+                    .ignoresSafeArea()
                 
-                // Cell itmens
-                ForEach(SideMenuViewModel.allCases, id: \.self) {  viewModel in
-                   
-                    NavigationLink(
-                        destination: Text(viewModel.title),
-                        label: {
-                            SideMenuOptionView(viewModle: viewModel)
-                                .foregroundColor(.white)
-                        })
+                VStack{
+                    SideMenuHeaderView(isShowing: $isShowing)
+                        .foregroundColor(.white)
+                        .frame(height: 240)
+                        
+                    // Cell itmens
+                    ForEach(SideMenuViewModel.allCases, id: \.self) {  viewModel in
+                        NavigationLink(
+                            destination: Text(viewModel.title),
+                            label: {
+                                SideMenuOptionView(viewModle: viewModel)
+                                    .foregroundColor(.white)
+                            })
+                    }
                     
+                    Spacer()
                 }
-                
-                Spacer()
-            }
-        }.navigationBarHidden(true)
+            }.navigationBarHidden(true)
+        }
     }
 }
 
 struct SideMenuView_Previews: PreviewProvider {
     static var previews: some View {
         SideMenuView(isShowing: .constant(true))
+        SideMenuView(isShowing: .constant(true))
+            .preferredColorScheme(.dark)
     }
 }

@@ -24,6 +24,10 @@ struct SideMenuOptionView: View {
 
 struct SideMenuOptionView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuOptionView(viewModle: .messages)
+        Group {
+            SideMenuOptionView(viewModle: .profile)
+            SideMenuOptionView(viewModle: .profile)
+                .preferredColorScheme(.dark)
+        }
     }
 }

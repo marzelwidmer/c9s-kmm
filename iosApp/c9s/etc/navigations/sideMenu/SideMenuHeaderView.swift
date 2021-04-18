@@ -13,16 +13,7 @@ struct SideMenuHeaderView: View {
     
     var body: some View {
         ZStack(alignment: .topTrailing){
-            Button(action: {
-                withAnimation(.spring()){
-                    isShowing.toggle()
-                }
-            }, label: {
-                Image(systemName: "xmark")
-                    .frame(width: 31, height: 32)
-                    .foregroundColor(.white)
-                    .padding()
-            })
+            closeButton.foregroundColor(.white)
             VStack(alignment: .leading) {
                 Image("virus")
                     .resizable()
@@ -54,10 +45,27 @@ struct SideMenuHeaderView: View {
             }.padding()
         }
     }
+    
+    
+    var closeButton: some View {
+        Button(action: {
+            withAnimation(.spring()){
+                isShowing.toggle()
+            }
+        }, label: {
+            Image(systemName: "xmark")
+                .frame(width: 31, height: 32)
+                .padding()
+        })
+    }
 }
 
 struct SudeMenuHeaderView_Previews: PreviewProvider {
     static var previews: some View {
-        SideMenuHeaderView(isShowing: .constant(true))
+        Group {
+            SideMenuHeaderView(isShowing: .constant(true))
+            SideMenuHeaderView(isShowing: .constant(true))
+                .preferredColorScheme(.dark)
+        }
     }
 }

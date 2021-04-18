@@ -13,9 +13,7 @@ struct SideMenuContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                if isShowing {
-                    SideMenuView(isShowing: $isShowing)
-                }
+                SideMenuView(isShowing: $isShowing)
                 HomeView()
                     .cornerRadius(isShowing ? 20 : 10)
                     .offset(x: isShowing ? 300 : 0, y: isShowing ? 44: 0 )
@@ -26,9 +24,10 @@ struct SideMenuContentView: View {
                         }
                     }, label: {
                         Image(systemName: "list.bullet")
-                            .foregroundColor(.black)
+                            .foregroundColor(.primary)
                     }))
                     .navigationTitle("Home")
+                    .foregroundColor(.secondary)
             }
         }.onAppear {
             isShowing = false
@@ -39,14 +38,15 @@ struct SideMenuContentView: View {
 struct SideMenuContentView_Previews: PreviewProvider {
     static var previews: some View {
         SideMenuContentView()
+        SideMenuContentView()
+            .preferredColorScheme(.dark)
     }
 }
 
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Color(.white)
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).foregroundColor(.primary)
         }
     }
 }

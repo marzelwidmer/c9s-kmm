@@ -20,8 +20,6 @@
 		E3568CAA26217BF00030D0DC /* AppDataServcie.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3568CA926217BF00030D0DC /* AppDataServcie.swift */; };
 		E3568CAC26217BFC0030D0DC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3568CAB26217BFC0030D0DC /* User.swift */; };
 		E3568CB62621F6BF0030D0DC /* c9sTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3568CB52621F6BF0030D0DC /* c9sTests.swift */; };
-		E37B2BA7261FA0420089AB70 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E37B2BA6261FA0420089AB70 /* shared.framework */; };
-		E37B2BA8261FA0420089AB70 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E37B2BA6261FA0420089AB70 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		E37B2BAD261FA1200089AB70 /* CListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BAC261FA1200089AB70 /* CListView.swift */; };
 		E37B2BB3261FA1FB0089AB70 /* CContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB2261FA1FB0089AB70 /* CContentView.swift */; };
 		E37B2BB5261FA2270089AB70 /* CViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E37B2BB4261FA2270089AB70 /* CViewModel.swift */; };
@@ -32,6 +30,8 @@
 		E3BCD6B1262C2884005696D4 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCD6B0262C2884005696D4 /* SideMenuViewModel.swift */; };
 		E3BCD6B6262C294A005696D4 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCD6B5262C294A005696D4 /* SideMenuView.swift */; };
 		E3BCD6BB262C297D005696D4 /* SideMenuContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3BCD6BA262C297C005696D4 /* SideMenuContentView.swift */; };
+		E3BCD6D2262C4B9F005696D4 /* shared.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E3BCD6D1262C4B9F005696D4 /* shared.framework */; };
+		E3BCD6D3262C4B9F005696D4 /* shared.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = E3BCD6D1262C4B9F005696D4 /* shared.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,13 +45,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		E37B2BA9261FA0420089AB70 /* Embed Frameworks */ = {
+		E3BCD6D4262C4B9F005696D4 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				E37B2BA8261FA0420089AB70 /* shared.framework in Embed Frameworks */,
+				E3BCD6D3262C4B9F005696D4 /* shared.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,7 +76,6 @@
 		E3568CB32621F6BF0030D0DC /* c9sTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = c9sTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3568CB52621F6BF0030D0DC /* c9sTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = c9sTests.swift; sourceTree = "<group>"; };
 		E3568CB72621F6BF0030D0DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E37B2BA6261FA0420089AB70 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
 		E37B2BAC261FA1200089AB70 /* CListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CListView.swift; sourceTree = "<group>"; };
 		E37B2BB2261FA1FB0089AB70 /* CContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CContentView.swift; sourceTree = "<group>"; };
 		E37B2BB4261FA2270089AB70 /* CViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CViewModel.swift; sourceTree = "<group>"; };
@@ -87,6 +86,7 @@
 		E3BCD6B0262C2884005696D4 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 		E3BCD6B5262C294A005696D4 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
 		E3BCD6BA262C297C005696D4 /* SideMenuContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuContentView.swift; sourceTree = "<group>"; };
+		E3BCD6D1262C4B9F005696D4 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = "../shared/build/xcode-frameworks/shared.framework"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,7 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E37B2BA7261FA0420089AB70 /* shared.framework in Frameworks */,
+				E3BCD6D2262C4B9F005696D4 /* shared.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -233,7 +233,7 @@
 		E37B2BA4261FA0050089AB70 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E37B2BA6261FA0420089AB70 /* shared.framework */,
+				E3BCD6D1262C4B9F005696D4 /* shared.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -297,7 +297,7 @@
 				E30E2559261EC53600C0C7E0 /* Sources */,
 				E30E255A261EC53600C0C7E0 /* Frameworks */,
 				E30E255B261EC53600C0C7E0 /* Resources */,
-				E37B2BA9261FA0420089AB70 /* Embed Frameworks */,
+				E3BCD6D4262C4B9F005696D4 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -486,6 +486,7 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				"EXCLUDED_ARCHS[sdk=iphonesimulator*]" = arm64;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
