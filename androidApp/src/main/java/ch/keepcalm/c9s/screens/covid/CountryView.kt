@@ -8,6 +8,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
+import ch.keepcalm.c9s.data.remote.model.CovidCHDto
 import ch.keepcalm.c9s.domain.Country
 
 @Composable
@@ -25,3 +26,4 @@ fun CountryView(country: Country) = Row(verticalAlignment = Alignment.CenterVert
         Text(country.name, style = MaterialTheme.typography.h6)
     }
 }
+

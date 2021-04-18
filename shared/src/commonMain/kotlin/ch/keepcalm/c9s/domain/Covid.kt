@@ -4,3 +4,7 @@ data class Covid(
     val country: String
 )
 
+
+data class Country(
+    val name: String
+)

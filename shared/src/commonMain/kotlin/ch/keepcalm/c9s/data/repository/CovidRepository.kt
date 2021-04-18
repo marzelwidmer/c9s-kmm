@@ -3,6 +3,7 @@ package ch.keepcalm.c9s.data.repository
 import ch.keepcalm.c9s.data.remote.CovidApi
 import ch.keepcalm.c9s.domain.Country
 import ch.keepcalm.c9s.domain.Covid
+import ch.keepcalm.c9s.domain.Record
 import ch.keepcalm.c9s.getLogger
 import org.koin.core.component.KoinComponent
 import org.koin.core.component.inject
@@ -24,4 +25,15 @@ class CovidRepository  : KoinComponent {
             Country(it)
         }
     }
+
+    @Throws(Exception::class)
+    suspend fun fetchRecords(): List<Record> {
+        logger.i(tag = "---------> Covid Repo", message = "fetch CH COVID records")
+
+        return covidApi.fetchRecords().records.map {
+            Record(canton = it.abbreviation_canton_and_fl)
+        }
+
+    }
+
 }

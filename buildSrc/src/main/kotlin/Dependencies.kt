@@ -1,4 +1,5 @@
 object Versions {
+
     const val android_gradle = "4.2.0-rc01"
     const val kotlin = "1.4.32"
 
@@ -11,7 +12,6 @@ object Versions {
     const val kotlinx_coroutines_core = "1.4.3-native-mt"
     const val kotlinx_dateTime = "0.1.1"
     const val ktor = "1.5.2"
-
 
     const val compose = "1.0.0-beta03"
     const val nav_compose = "1.0.0-alpha09"
@@ -28,6 +28,7 @@ object Versions {
     const val russhwolf = "0.7.4"
 
     const val kluent = "1.65"
+    const val kotest = "4.4.3"
 }
 
 object Deps {

@@ -1,8 +1,8 @@
 package ch.keepcalm.c9s
 
 import android.app.Application
-import ch.keepcalm.c9s.di.appModule
-import ch.keepcalm.c9s.di.initKoin
+import ch.keepcalm.c9s.config.appModule
+import ch.keepcalm.c9s.config.initKoin
 import co.touchlab.kermit.Kermit
 import org.koin.android.ext.koin.androidContext
 import org.koin.android.ext.koin.androidLogger

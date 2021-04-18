@@ -15,7 +15,8 @@ struct c9sApp: App {
     }
     var body: some Scene {
         WindowGroup {
-            UsersView()
+            SideMenuContentView()
+//            UsersView()
 //            CContentView()
 //            ContentView()
         }

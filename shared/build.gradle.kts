@@ -22,6 +22,7 @@ kotlin {
             }
         }
     }
+
     sourceSets {
         all {
             languageSettings.apply {
@@ -42,7 +43,6 @@ kotlin {
 
                 // koin
                 api(Koin.core)
-                compileOnly(Koin.test)
 
                 // Ktor
                 implementation(Ktor.clientCore)
@@ -55,21 +55,9 @@ kotlin {
                 implementation(Serialization.json)
             }
         }
-        val commonTest by getting {
-            dependencies {
-                implementation(kotlin("test-common"))
-                implementation(kotlin("test-annotations-common"))
-            }
-        }
         val androidMain by getting {
             dependencies {
                 implementation("io.ktor:ktor-client-android:${Versions.ktor}")
-            }
-        }
-        val androidTest by getting {
-            dependencies {
-                implementation(kotlin("test-junit"))
-                implementation("junit:junit:4.13.2")
             }
         }
         val iosMain by getting {
@@ -79,8 +67,40 @@ kotlin {
             }
         }
 
-        val iosTest by getting {
 
+        // TEST SourceSets
+        val commonTest by getting {
+            dependencies {
+                implementation(kotlin("test-common"))
+                implementation(kotlin("test-annotations-common"))
+
+                // Ktor
+                api(Ktor.clientMock)
+                api(Ktor.clientCore)
+
+//                implementation(Ktor.clientJson)
+//                implementation(Ktor.clientLogging)
+//                api(Ktor.clientSerialization)
+                // Kotlinx Serialization
+//                api(Serialization.core)
+//                api(Serialization.json)
+            }
+        }
+        val androidTest by getting {
+            dependencies {
+                implementation(kotlin("test-junit"))
+                implementation("junit:junit:4.13.2")
+
+
+                compileOnly(Koin.test)
+
+                implementation ("io.kotest:kotest-runner-junit5-jvm:${Versions.kotest}")
+                implementation("io.kotest:kotest-framework-engine:${Versions.kotest}")
+                implementation ("io.kotest:kotest-assertions-core:${Versions.kotest}")
+                implementation ("io.kotest:kotest-property:${Versions.kotest}")
+            }
+        }
+        val iosTest by getting {
 
         }
     }
@@ -109,3 +129,11 @@ val packForXcode by tasks.creating(Sync::class) {
 }
 
 tasks.getByName("build").dependsOn(packForXcode)
+
+
+tasks {
+    // Tests
+    withType<Test> {
+        useJUnitPlatform()
+    }
+}

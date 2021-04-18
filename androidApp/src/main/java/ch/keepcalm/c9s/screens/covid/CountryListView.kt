@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
+import androidx.compose.material.MaterialTheme
 import androidx.compose.material.Scaffold
 import androidx.compose.material.Text
 import androidx.compose.material.TopAppBar
@@ -16,6 +17,7 @@ import androidx.compose.ui.unit.dp
 fun CovidListView(covidViewModel: CovidViewModel) {
 
     val countryList = covidViewModel.countries.observeAsState()
+    val records = covidViewModel.records.observeAsState()
 
     Scaffold(
         topBar = {
@@ -27,15 +29,26 @@ fun CovidListView(covidViewModel: CovidViewModel) {
         }) {
 
         Spacer(Modifier.size(20.dp))
-
-        countryList.value?.let {
+        records.value?.let {
             LazyColumn {
                 items(
                     items = it,
-                    itemContent = { player ->
-                        CountryView(player)
+                    itemContent = { records ->
+                        RecordView(records)
                     })
             }
         }
     }
+
+
+//    Spacer(Modifier.size(20.dp))
+//    countryList.value?.let {
+//        LazyColumn {
+//            items(
+//                items = it,
+//                itemContent = { player ->
+//                    CountryView(player)
+//                })
+//        }
+//    }
 }
