@@ -13,9 +13,8 @@ struct SideMenuContentView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                if isShowing {
-                    SideMenuView(isShowing: $isShowing)
-                }
+                SideMenuView(isShowing: $isShowing)
+                
                 HomeView()
                     .cornerRadius(isShowing ? 20 : 10)
                     .offset(x: isShowing ? 300 : 0, y: isShowing ? 44: 0 )
@@ -39,6 +38,7 @@ struct SideMenuContentView: View {
 struct SideMenuContentView_Previews: PreviewProvider {
     static var previews: some View {
         SideMenuContentView()
+            .preferredColorScheme(.dark)
     }
 }
 
