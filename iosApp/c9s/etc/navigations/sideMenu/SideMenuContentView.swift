@@ -46,7 +46,9 @@ struct SideMenuContentView_Previews: PreviewProvider {
 struct HomeView: View {
     var body: some View {
         ZStack {
-            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/).foregroundColor(.primary)
+            Color(.white)
+            Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+                .foregroundColor(.gray)
         }
     }
 }

@@ -11,7 +11,9 @@ struct SideMenuView: View {
     @Binding var isShowing: Bool
     
     var body: some View {
+        
         if isShowing {
+            
             ZStack {
                 LinearGradient(gradient: Gradient(colors: [Color.blue, Color.purple]),startPoint: .top, endPoint: .bottom)
                     .ignoresSafeArea()
@@ -30,7 +32,6 @@ struct SideMenuView: View {
                                     .foregroundColor(.white)
                             })
                     }
-                    
                     Spacer()
                 }
             }.navigationBarHidden(true)
